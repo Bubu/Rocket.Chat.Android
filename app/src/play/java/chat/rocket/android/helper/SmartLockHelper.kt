@@ -36,7 +36,6 @@ object SmartLockHelper {
         activity: Activity
     ): Credential? {
         var credential: Credential? = null
-
         val credentialRequest = CredentialRequest.Builder()
             .setPasswordLoginSupported(true)
             .build()

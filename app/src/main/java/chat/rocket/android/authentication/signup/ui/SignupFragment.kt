@@ -17,9 +17,9 @@ import chat.rocket.android.authentication.signup.presentation.SignupPresenter
 import chat.rocket.android.authentication.signup.presentation.SignupView
 import chat.rocket.android.helper.KeyboardHelper
 import chat.rocket.android.helper.SmartLockHelper
+import chat.rocket.android.helper.Credentials
 import chat.rocket.android.helper.TextHelper
 import chat.rocket.android.util.extensions.*
-import com.google.android.gms.auth.api.credentials.Credentials
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_authentication_sign_up.*
 import javax.inject.Inject

@@ -17,7 +17,6 @@ import chat.rocket.common.model.Token
 import chat.rocket.common.util.ifNull
 import chat.rocket.core.RocketChatClient
 import chat.rocket.core.internal.rest.*
-import com.google.android.gms.auth.api.credentials.Credential
 import kotlinx.coroutines.experimental.delay
 import timber.log.Timber
 import java.util.concurrent.TimeUnit

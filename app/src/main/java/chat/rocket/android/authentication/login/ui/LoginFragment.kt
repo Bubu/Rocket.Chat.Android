@@ -30,7 +30,6 @@ import chat.rocket.android.webview.oauth.ui.INTENT_OAUTH_CREDENTIAL_SECRET
 import chat.rocket.android.webview.oauth.ui.INTENT_OAUTH_CREDENTIAL_TOKEN
 import chat.rocket.android.webview.oauth.ui.oauthWebViewIntent
 import chat.rocket.common.util.ifNull
-import com.google.android.gms.auth.api.credentials.*
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_authentication_log_in.*
 import javax.inject.Inject
@@ -100,7 +99,7 @@ class LoginFragment : Fragment(), LoginView {
             if (data != null) {
                 when (requestCode) {
                     REQUEST_CODE_FOR_MULTIPLE_ACCOUNTS_RESOLUTION -> {
-                        onCredentialRetrieved(data.getParcelableExtra(Credential.EXTRA_KEY))
+                        onCredentialRetrieved(data.getPa rcelableExtra(Credential.EXTRA_KEY))
                     }
                     REQUEST_CODE_FOR_SIGN_IN_REQUIRED -> {
                         //use the hints to autofill sign in forms to reduce the info to be filled.
